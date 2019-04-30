@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>From</title>
+</head>
+
+<body>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	form{
+		width : 50%;
+		background-color: rgba(0,0,0,0.4 );
+		border-radius: 5px;
+
+	}
+	.inputs{
+		margin: 20px;
+	}
+	.inputs>input{
+		
+		width: 60%;
+		height: 30px;
+		border: solid black;
+		border-radius: 5px;
+		font-size: 20px;
+		padding: 10px;
+		color: black;
+	}
+	.place>#submit{
+		width: 20%;
+		background-color: black;
+		color: white;
+		margin: 30px;
+		border-radius: 5px;
+		border: solid black;
+	}
+</style>
+<center>
+<form name="formName" method="post">
+	
+	<div class="place">
+			 Form for apply Sports Festival  
+		<div class="inputs">
+			<input type="text" name="fname" placeholder="First Name" id="msm"><br>
+			<span id="fname"></span><br>
+			<input type="text" name="lname" placeholder="Last Name"><br>
+			<span id="lname"></span><br>
+			<input type="email" name="email" placeholder="Email"><br>
+			<span id="email"></span><br>
+			<input type="text" name="cellNum" placeholder="Contact Number(without space)"><br>
+			<span id="cellNum"></span><br>
+			<input type="text" name="address" placeholder="Address"><br>
+			<span id="address"></span><br>
+			<input type="password" name="pass" placeholder="Password"><br>
+			<span id="pass"></span><br>
+
+
+		</div>
+		Select Gender<input type="radio" name="gender">Male
+			<input type="radio" name="gender">Female
+			<input type="radio" name="gender">Others<br>
+
+
+		<input type="submit" value="Submit" onClick="return formValid()" id="submit">
+		
+	</div>
+	
+</form>
+</center>
+<script type="text/javascript">
+
+	
+	
+
+	function formValid() {
+	
+	var fname=document.formName.fname.value;
+	var lname=document.formName.lname.value;
+	var email=document.formName.email.value;
+	var cellNum=document.formName.cellNum.value;
+	var pass=document.formName.pass.value;
+		
+		if(fname==""){
+			document.getElementById('fname').innerHTML="Enter First Name";
+			document.getElementById('fname').style.color="red";
+			return false;
+		}
+		else{
+						document.getElementById('fname').innerHTML="";
+		}
+		if(lname==""){
+			document.getElementById('lname').innerHTML="Enter Last Name Please!";
+			document.getElementById('lname').style.color="red";
+			return false;
+		}
+		else if(lname.length<5 || lname.length>15){
+			document.getElementById('lname').innerHTML="last Name must be between 5 to 15 character";
+			document.getElementById('lname').style.color="red";
+			return false;
+		}
+		else{
+						document.getElementById('lname').innerHTML="";
+		}
+		if(email==""){
+			document.getElementById('email').innerHTML="Enter email Please!";
+			document.getElementById('email').style.color="red";
+			return false;
+		}
+		else{
+						document.getElementById('email').innerHTML="";
+		}	
+		 if(cellNum==""){
+			document.getElementById('cellNum').innerHTML="Enter Mobile number Please!";
+			document.getElementById('cellNum').style.color="red";
+			return false;
+		}
+		else{
+						document.getElementById('cellNum').innerHTML="";
+		}
+		 if(pass==""){
+			document.getElementById('pass').innerHTML="Enter Password please!";
+			document.getElementById('pass').style.color="red";
+			return false;
+		}
+		else{
+						document.getElementById('pass').innerHTML="";
+		}
+
+			
+	}
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
