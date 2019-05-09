@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+header{
+	background-color: black;
+	text-align: center;
+}
+header>ul>li>a{
+	color: #eee;
+	margin: 13px;
+}
+h1{
+	text-align: center;
+	font-size: 70px;
+	font-family: serif;
+	color: black;
+	margin: 0;
+}
+ul,li{
+	text-align: center;
+	display: inline;
+	text-transform: uppercase;
+}
+header>ul>li>a, #todayPaper>a,.menuBar>ul>li>a{
+	text-decoration: none;
+	margin-right: 1%;
+	font-size: 10px;
+
+}
+#todayPaper,#todayPaper>a{
+	text-align: center;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: -15px;
+}
+
+.menuBar{
+		text-align: center;
+		text-transform: uppercase;
+
+
+}
+.menuBar>ul{
+	border-top: 3px solid black;
+}
+.menuBar>ul>li>a{
+	color: black;
+	padding: 3px;
+}
+.menuBar>ul>li>a:hover{
+	background-color: #eee;
+
+}
+#searchBar>input{
+	width: 60%;
+	height: 20px;
+	margin-left: 20%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.main{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.colam{
+	width: 30%;
+	float: left;
+}
+
+
+.colam>.col-1>img{
+	width: 100%;
+}
+.col-21>a>img{
+	width: 100%;
+	float: left;
+}
+
+.colam>.col-2>.col-21{
+width: 50%;
+float: left;
+}
+.colam>.col-2>.col-22>a>.img{
+width: 10%;
+float: left;
+}
+.colam>.col-2>.col-22>a{
+width: 35%;
+float: left;
+}
+.colam>.col-3>img{
+	width: 100%;
+	float: left;
+}
